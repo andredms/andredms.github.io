@@ -157,7 +157,7 @@ Given the user controls `{args.name}` when querying the endpoint, there's potent
 
 ## Guest Authentication 
 
-Stepping back, it's time we look at getting authenticated as a guest so we can use the `/download` endpoint which'll allow us to ~abuse~ use the `convertPdf()` function we saw earlier. Let's check out `app/controllers/authController.js`:
+Stepping back, it's time we look at getting authenticated as a guest so we can use the `/download` endpoint which'll allow us to ~~abuse~~ use the `convertPdf()` function we saw earlier. Let's check out `app/controllers/authController.js`:
 
 ```js
 const secret = process.env.secret
