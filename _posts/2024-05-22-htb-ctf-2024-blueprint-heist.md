@@ -315,7 +315,7 @@ console.log(token);
 ![image](../images/htb-ctf-2024/admin-jwt.png)
 *Admin JWT creation*
 
-Success! We should now be able to authenticate to the routes in `app/routes/internal.ejs`.
+Admin token in hand, we should now be able to authenticate to the routes in `app/routes/internal.ejs`.
 
 ## Server-Side Request Forgery (SSRF)
 
@@ -597,7 +597,7 @@ There are templates for `400.ejs`, `401.ejs` and `500.ejs` - but no `404.ejs` (4
 Next, we visit a non-existant route (e.g. `/blah`) to trigger a 404 error:
 
 ![image](../images/htb-ctf-2024/flag.png)
-*`/readlag` executed and flag rendered*
+*/readflag executed and flag rendered*
 
 Flag retrieved! and challenge completed...many chained exploits later.
 
