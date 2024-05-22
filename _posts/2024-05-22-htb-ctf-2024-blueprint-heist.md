@@ -20,25 +20,29 @@ categories: [CTF]
 This challenge included a website that could be could spun up, as well as a `.zip` file containing the application code allowing us to perform white box testing. After spawning the Docker container, the home page could be visited - a simple website which allows users to view construction reports: 
 
 ![image](../images/htb-ctf-2024/website-index.png)
+*Website index*
 
 Since we were given the application code, I skipped the usual enumeration steps and jumped straight into analysing and taking notes of the application's functionality.
 
 After unzipping the file, there was a standard web application directory setup:
 
 ![image](../images/htb-ctf-2024/root-directory.png)
+*Code / directory*
 
 Opening `Dockerfile`, there was nothing out of the ordinary. We can see that a binary called `/readflag` is copied and built inside the server's root directory which'll enable us to read the flag at the end of the challenge (likely via an RCE exploit):
 
-```
+```Dockerfile
 COPY config/readflag.c /
 RUN gcc -o /readflag /readflag.c && chmod 4755 /readflag && rm /readflag.c
 ```
+{: file='Dockerfile'}
 
 There's also various mentions of `node`, so we can guess we're dealing with a Node.js server. `build-docker.sh` also let us know that the application is running on port `1337`: 
 
-```
+```s
 docker run -p 1337:1337 -it --rm --name=blueprint-heist blueprint-heist
 ```
+{: file='build-docker.sh'}
 
 Nothing of interest was found in the other files/folders apart from `/app` - the directory containing the web application itself.
 
