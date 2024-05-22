@@ -227,7 +227,7 @@ The above tells us that `/download` requires a `url` parameter as part of the bo
 Using Burp Suite, we'll intercept a request to `/download`, right click > `Send to repeater`, switch the request to POST, attatch the token as a query parameter, add `Content-Type: application/json` as a header and include a `url` parameter in the body. 
 
 ![image](../images/htb-ctf-2024/download-pdf-request.png)
-*Authenticated guest request to `/download`*
+*Authenticated guest request to /download*
 
 Sure enough, after hitting send and viewing the response in our browser we've got a PDF of `http://google.com`:
 
@@ -322,7 +322,7 @@ Admin token in hand, we should now be able to authenticate to the routes in `app
 Remember the `getDataByName` query accessible via `/graphql` from earlier? We should now be able to access it. Let's see if we can query it via the browser with our new admin JWT as the `token` query parameter:
 
 ![image](../images/htb-ctf-2024/internal-users-only.png)
-*Internal users only error on `/graphql` endpoint*
+*Internal users only error on /graphql endpoint*
 
 Looks like only internal users are able to access the endpoint...even with an admin token 🤔 Let's look at the code of `app/controllers/authController.js` again to see how it checks for this:
 
@@ -556,7 +556,7 @@ Now we face the problem of actually getting the payload to execute and render in
 Finding a directory where our EJS payload could be served up and rendered wasn't too difficult. A simple `grep -r find "render"` shows all calls to `res.render()`:
 
 ![image](../images/htb-ctf-2024/grep-results.png)
-*`grep -r find "render" .` results*
+*grep -r find "render" . results*
 
 One file from the above we haven't looked at yet is `app/controllers/errorController.js`:
 
