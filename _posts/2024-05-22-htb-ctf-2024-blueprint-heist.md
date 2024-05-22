@@ -2,6 +2,8 @@
 layout: post
 title: HTB Business CTF 2024 - Blueprint Heist 
 description: Hack the Box's Business CTF 2024 came to a close this week and had its share of fun flags to capture. This writeup will be focussing on 'Blueprint Heist' - a web challenge which required the chaining of multiple exploits.
+image: https://media.licdn.com/dms/image/D4E10AQFXxbuyydr5CQ/image-shrink_800/0/1713182884784/BIZCTF24_KV_1920x1080jpg?e=2147483647&v=beta&t=HglVJKeH4BHSZnP5RF9Xri4_F62pcp_ISSFuGf_8bBo
+categories: [CTF]
 ---
 
 # The Challenge

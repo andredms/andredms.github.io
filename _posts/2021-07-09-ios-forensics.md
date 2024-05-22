@@ -1,10 +1,10 @@
 ---
 layout: post
 title: iOS Forensics 
-description: I've been wanting to get some hands-on experience with computer forensics and create a habit out of exploring new data acquisition techniques on devices. This is my first experience in doing so on an old iPhone 7 I performed a factory reset on. There are many different ways to acquire data from a seized device, however this guide will focus on the most common way - [jailbreaking](https://www.kaspersky.com/resource-center/definitions/what-is-jailbreaking).
+description: I've been wanting to get some hands-on experience with computer forensics and create a habit out of exploring new data acquisition techniques on devices. This is my first experience in doing so on an old iPhone 7 I performed a factory reset on. There are many different ways to acquire data from a seized device, however this guide will focus on the most common way - jailbreaking.
+image: https://images.imyfone.com/en/assets/article/activation-bypass/iphone-jailbreak.jpeg
+categories: [Other]
 ---
-
-I've been wanting to get some hands-on experience with computer forensics and create a habit out of exploring new data acquisition techniques on devices. This is my first experience in doing so on an old iPhone 7 I performed a factory reset on. There are many different ways to acquire data from a seized device, however this guide will focus on the most common way - [jailbreaking](https://www.kaspersky.com/resource-center/definitions/what-is-jailbreaking).
 
 Jailbreaking essentially replaces the firmware partition with a hacked version that allows for the installation of tools not normally available (such as OpenSSH). This walkthrough will be done on a macOS device running Big Sur. 
 
