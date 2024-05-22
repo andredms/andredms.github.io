@@ -156,7 +156,7 @@ The call history of an iOS device is located within ```call_history.db```. The '
 
 ```/private/var/Library/Caches/locationd```
 
-Applications such as Camera often store the longitude and latitude of where a photo was taken. The ```consolidated.db``` file contains geolocation data for every cell tower the iOS device has ever utilised. Tools such as [iPhone Tracker](peterwarden.github.com/iPhoneTracker) pull the aforementioned file and provide a graphical display of where the iOS device has been. 
+Applications such as Camera often store the longitude and latitude of where a photo was taken. The ```consolidated.db``` file contains geolocation data for every cell tower the iOS device has ever utilised. Tools such as [iPhone Tracker](https://github.com) pull the aforementioned file and provide a graphical display of where the iOS device has been. 
 
 # Tools
 There are a variety of tools, that all use different methods that can be used in a forensics investigation on a seized iOS device:
@@ -164,7 +164,6 @@ There are a variety of tools, that all use different methods that can be used in
 [Scalpel](https://github.com/sleuthkit/scalpel)\
 [Paraben Device Seizure](https://paraben.com/paraben-for-mobile-forensics/)\
 [EnCase](https://security.opentext.com/encase-mobile-investigator)\
-[Mobile Sync Browser](http://mobilesyncbrowser.com/)
 
 # What did I learn?
 1) How to jailbreak an iOS device to acquire evidence.
