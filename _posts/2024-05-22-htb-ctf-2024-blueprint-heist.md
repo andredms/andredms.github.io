@@ -550,7 +550,7 @@ query={
 ![image](../images/htb-ctf-2024/file-write.png)
 *SQL file write*
 
-It didn't immediately look good, but after verifying the file was uploaded to `app/views.test.ejs` using our old payload to view `file:///app/views/test.ejs` we can see it worked! 
+It didn't immediately look good, but after verifying the file was uploaded to `app/views/test.ejs` using our old payload to view `file:///app/views/test.ejs` we can see it worked! 
 
 ![image](../images/htb-ctf-2024/file-write-result.png)
 *SQL file write result*
